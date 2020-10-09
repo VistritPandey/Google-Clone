@@ -5,6 +5,10 @@ function App() {
   return (
     <div className="App">
       <h1> Well Hello There </h1>
+
+      {/*home page */}
+
+      {/*search page*/}
     </div>
   );
 }
