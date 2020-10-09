@@ -7,6 +7,7 @@ function App() {
       <h1> Well Hello There </h1>
 
       {/*home page */}
+      <Home />
 
       {/*search page*/}
     </div>
