@@ -6,22 +6,17 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-    <Router>
+      <Router>
 
-    <switch>
-      <Route path="/search">
-        <h1>This is the search page</h1>
-      </Route>
-      <Route path="/home">
-        <Home />
-      </Route>
-    </switch>
-
-      {/*home page */}
-      <Home />
-
-      {/*search page*/}
-    </Router>
+        <Switch>
+          <Route path="/search">
+            <h1>This is the search page</h1>
+          </Route>
+          <Route>
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
