@@ -20,3 +20,9 @@
 .search__input >input:focus {
     outline-width: 0;
 }
+.search__inputIcon {
+    color: gray;
+}
+.search__button {
+    display: none;
+}
