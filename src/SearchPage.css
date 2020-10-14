@@ -56,5 +56,17 @@
   margin-top: 20px;
   margin-left: 240px;
   margin-bottom: 100px;
-  
+
+}
+.searchPage__resultTitle {
+  text-decoration: none;
+}
+.searchPage__resultTitle:hover{
+  text-decoration: underline;
+}
+.searchPage__resultTitle > h2 {
+  font-weight: 10px;
+}
+.searchPage__resultSnippet{
+  margin-top: 10px;
 }
