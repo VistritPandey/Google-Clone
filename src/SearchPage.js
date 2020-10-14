@@ -13,7 +13,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 
 function SearchPage() {
-    const[{ term }, dispatch] = useStateValue();
+    const[{ term='Apple' }, dispatch] = useStateValue();
     const { data } = useGoogleSearch(term);
 
     console.log(data)
@@ -69,8 +69,13 @@ function SearchPage() {
             {true && (
             <div className='searchPage__results'>
                 <p className="searchPage__resultCount">
-                    About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for Tesla
+                    About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for {term}
                 </p>
+                {data?.items.map(item => (
+                    <div className='searchPage__result'>
+                        <a> {item.displayLink} ▼ </a>
+                    </div>
+                ))}
             </div> 
         )}
         </div>
