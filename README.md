@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can use the deployed version here: https://vistrit-goo.web.app/
+
+## Use your own API Key
+
+The API Key has been removed, because I only have 100 free requests per day. You can add your own API key. However the deployed link will work right now, if you click on my link.
 
 ## Available Scripts
 
